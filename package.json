@@ -1,0 +1,39 @@
+{
+  "name": "devchallenges",
+  "version": "1.0.0",
+  "main": "webpack.config.js",
+  "browserslist": [
+    "ie >= 11"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "css-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^1.1.0",
+    "postcss-loader": "^4.0.4",
+    "sass": "^1.27.0",
+    "sass-loader": "^10.0.3",
+    "style-loader": "^2.0.0",
+    "stylelint": "^13.7.2",
+    "stylelint-webpack-plugin": "^2.1.1",
+    "webpack": "^5.1.3",
+    "webpack-cli": "^4.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k-sugisaki/devchallenges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k-sugisaki/devchallenges/issues"
+  },
+  "homepage": "https://github.com/k-sugisaki/devchallenges#readme",
+  "dependencies": {
+    "browserslist": "^4.14.6"
+  },
+  "description": ""
+}
