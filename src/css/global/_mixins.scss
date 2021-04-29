@@ -35,3 +35,10 @@ $mq-breakpoints: (
   background-repeat: no-repeat;
   background-size: contain; 
 }
+
+//表示・非表示
+.is-sp {
+  @include mq {
+    display: none;
+  }
+}

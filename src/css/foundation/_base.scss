@@ -2,7 +2,7 @@
 @use '../global/variables' as var;
 
 body {
-  font-size: 100%;
+  font-size: 62.5%; //1emを10pxにする
   color: var.$color-base;
 }
 
