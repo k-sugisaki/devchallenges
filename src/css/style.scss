@@ -1,8 +1,5 @@
-body {
-  background: linear-gradient(to right, #ff6f00 50%, #009688 50%);
-}
-
-#main p {
-  color: #666;
-  display: flex;
-}
+/* 読み込みファイル */
+@use 'foundation';
+@use 'global';
+@use 'layout/footer';
+@use 'project';

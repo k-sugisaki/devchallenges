@@ -57,7 +57,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "css/style.css",
+      filename: "css/recipe.css",
       ignoreOrder: true,
     }),
     // new StylelintPlugin({

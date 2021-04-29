@@ -1,0 +1,37 @@
+/*
+https://www.nxworld.net/sass-media-queries-mixin.html
+
+.elements {
+  @include mq(large) {} //min-width(デフォルトのときは（）不要)
+  @include mq(large, max, true) {} //max-width
+}
+*/
+
+//コンテンツ幅
+$contentsWidth: 1200px; //ブレイクポイント
+$mq-breakpoints: (
+  small: 768px,
+  medium: 900px,
+  large: 1060px,
+  xlarge: 1240px,
+  xxlarge: 1920px,
+  contents_width: $contentsWidth,
+);
+
+// media query
+@mixin mq($breakpoint: large, $rule: min, $subtraction: false) {
+  $breakpoint: map_get($mq-breakpoints, $breakpoint);
+  @if $rule == max and $subtraction {
+    $breakpoint: $breakpoint - 1;
+  }
+  @media screen and (#{$rule}-width: $breakpoint) {
+    @content;
+  }
+}
+
+//image
+@mixin bg_image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; 
+}
