@@ -1,3 +1,8 @@
 @use '../global/variables' as var;
 @use '../global/mixins' as mx;
 
+.pcnone {
+  @include mx.mq {
+    display: none;
+  }
+}
