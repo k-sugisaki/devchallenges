@@ -1,5 +1,118 @@
-/* 読み込みファイル */
-@use 'foundation';
-@use 'global';
-@use 'layout/footer';
-@use 'project';
+body {
+  margin: 0;
+  font-size: 100%;
+}
+
+.user-photo {
+  background: #8f8f8f;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.user-name {
+  text-align: center;
+  color: #333;
+  font-size: 1.6em;
+  line-height: 1;
+}
+
+.user-adress {
+  text-align: center;
+  color: #8f8f8f;
+  font-size: 1.2em;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__box {
+    margin: 20px;
+    padding: 15px 40px 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background: #ddd;
+    color: #8f8f8f;
+    text-align: center;
+    list-style: none;
+
+    & .num {
+      display: block;
+      color: #333;
+      font-weight: bold;
+    }
+  }
+}
+
+.gallery-area {
+  margin: 0 auto 30px;
+  width: calc(100% - 50px);
+  max-width: 980px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr) minmax(250px, 1fr);
+}
+
+@mixin background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+//gallery画像のファイル名
+$gallery-items: 400/400, 800/400, 200/400, 400/800, 400/400, 200/200;
+
+.gallery-item {
+  margin: 10px;
+  border-radius: 10px;
+
+  // @each $item in $gallery-items {
+  //   $i: index($gallery-items, $item);
+  //   &.grid__#{$i} {
+  //     @include background();
+  //     background: url(http://placekitten.com/#{$item});
+  //   }
+  // }
+  &.grid__1 {
+    @include background();
+    background: url(../img/gallery_photo01.png);
+  }
+  &.grid__2 {
+    @include background();
+    background: url(../img/gallery_photo02.png);
+    grid-column: 2/4;
+  }
+  &.grid__3 {
+    @include background();
+    background: url(../img/gallery_photo03.png);
+    grid-column: 1/3;
+  }
+  &.grid__4 {
+    @include background();
+    background: url(../img/gallery_photo04.png);
+    grid-row: 2/4;
+    grid-column: 3/4;
+  }
+  &.grid__5 {
+    @include background();
+    background: url(../img/gallery_photo05.png);
+  }
+  &.grid__6 {
+    @include background();
+    background: url(../img/gallery_photo06.png);
+  }
+}
+
+.footer {
+  background-color: rgba($color: (#000), $alpha: .5);
+  height: 100px;
+  color: #ddd;
+  text-align: center;
+}
