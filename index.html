@@ -3,13 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>webpack Test</title>
+  <title>Edie homepage</title>
   <link rel="stylesheet" href="dist/css/style_edie_homepage.css">
 </head>
 <body>
-  <div id="main">
-    <p>テスト</p>
-  </div>
+  <header class="header">
+    <div class="header-logo">Edie</div>
+    <nav class="header-nav">
+      <div class="header-nav__btn"></div>
+      <ul class="header-nav__list">
+        <li class="header-nav__item"><a href=""></a></li>
+        <li class="header-nav__item"><a href=""></a></li>
+        <li class="header-nav__item"><a href=""></a></li>
+        <li class="header-nav__item"><a href=""></a></li>
+        <li class="header-nav__item"><a href=""></a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="sec-hero" id="hero">
+      <p class="sec-lead--hero"></p>
+      <h1 class="sec-title"></h1>
+      <div class="hero-image"></div>
+    </section>
+    <section class="sec-contact" id="contact">
+      <h1 class="sec-title"></h1>
+      <p class="contact-detail"></p>
+      <form action="" method="post" class="contact-form">
+        <label for="email" class="contact-form__label"></label>
+        <textarea name="user_email" id="email" cols="30" rows="10" class="contact-form__text">Email</textarea>
+        <button type="submit" class="contact-form__btn">Join</button>
+      </form>
+    </section>
+    <section class="sec-service" id="service">
+      <h1 class="sec-title"></h1>
+      <div class="service__wrap">
+        <div class="service-card--design">
+          <div class="service-card__icon"></div>
+          <p class="service-card__title"></p>
+          <p class="service-card__description"></p>
+          <div class="service-card__btn"><a href="">Get started</a></div>
+        </div>
+        <div class="service-card--frontend">
+          <div class="service-card__icon"></div>
+          <p class="service-card__title"></p>
+          <p class="service-card__description"></p>
+          <div class="service-card__btn"><a href="">Get started</a></div>
+        </div>
+        <div class="service-card--backend">
+          <div class="service-card__icon"></div>
+          <p class="service-card__title"></p>
+          <p class="service-card__description"></p>
+          <div class="service-card__btn"><a href="">Get started</a></div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-works" id="works">
+      <h1 class="sec-title"></h1>
+      <div class="works__wrap">
+        <div class="works-card--fullstack">
+          <div class="works-card__image"></div>
+          <p class="works-card__lead"></p>
+          <p class="works-card__title"></p>
+        </div>
+        <div class="works-card--uxui">
+          <div class="works-card__image"></div>
+          <p class="works-card__lead"></p>
+          <p class="works-card__title"></p>
+        </div>
+        <div class="works-card--mobile">
+          <div class="works-card__image"></div>
+          <p class="works-card__lead"></p>
+          <p class="works-card__title"></p>
+        </div>
+        <div class="works-card--frontend">
+          <div class="works-card__image"></div>
+          <p class="works-card__lead"></p>
+          <p class="works-card__title"></p>
+        </div>
+      </div>
+      <div class="works-more"><a href="">see more</a></div>
+    </section>
+    <section class="sec-member" id="member">
+    <p class="sec-lead--member"></p>
+    <h1 class="sec-title"></h1>
+    <p class="member-detail"></p>
+    <div class="member__wrap">
+      <div class="member__photo--no01"></div>
+      <div class="member__photo--no02"></div>
+      <div class="member__photo--no03"></div>
+    </div>
+    </section>
+    <section class="sec-comment" id="comment">
+      <p class="comment-text"></p>
+      <div class="comment-profile">
+        <div class="comment-profile__photo"></div>
+        <div class="comment-profile__name"></div>
+        <div class="comment-profile__position"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__inner">
+      <nav class="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item"><a href=""></a></li>
+          <li class="footer-nav__item"><a href=""></a></li>
+          <li class="footer-nav__item"><a href=""></a></li>
+          <li class="footer-nav__item"><a href=""></a></li>
+          <li class="footer-nav__item"><a href=""></a></li>
+        </ul>
+      </nav>
+      <nav class="footer-share">
+        <p class="footer-share__title"></p>
+        <ul class="footer-share__list">
+          <li class="footer-share__item"><a href=""></a></li>
+          <li class="footer-share__item"><a href=""></a></li>
+          <li class="footer-share__item"><a href=""></a></li>
+        </ul>
+      </nav>
+      <form action="" method="post" class="contact-form--footer">
+        <label for="email" class="contact-form__label"></label>
+        <textarea name="user_email" id="email" cols="30" rows="10" class="contact-form__text">Email</textarea>
+        <button type="submit" class="contact-form__btn">Join</button>
+      </form>
+    </div>
+  </footer>
   <script src="dist/my-bundle.js"></script>
 </body>
 </html>
