@@ -1,11 +1,88 @@
-@use '../global/mixins' as mx;
+@use '../global/index' as g;
 
 .footer {
-  color: #a9a9a9;
+  background-color: g.$color-black;
   font-size: 0.8em;
-  text-align: center;
-  @include mx.mq {
+
+  @include g.mq {
     font-weight: 600;
     font-size: 1em;
   }
+}
+
+.footer__inner {
+  margin: 0 10vw;
+  display: flex;
+
+  @include g.mq(medium, max, true) {
+    flex-direction: column;
+  }
+  
+  & > * + * {
+    margin-top: 4em;
+  }
+}
+
+.footer-share {
+  $this: &;
+
+  &__logo {
+    line-height: 1;
+    font-family: g.$font-logo;
+    font-size: 3.6em;
+    font-weight: 800;
+    color: g.$color-gray;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 3vw;
+    }
+
+    & > a {
+      @include g.bg_image;
+      display: block;
+      width: 24px;
+      height: 24px;
+    }
+
+    &--instagram {
+      @extend #{$this}__item;
+      background-image: url(../img/sns_instagram.svg);
+    }
+
+    &--linkedin {
+      @extend #{$this}__item;
+      background-image: url(../img/sns_linkedin.svg);
+    }
+
+    &--twitter {
+      @extend #{$this}__item;
+      background-image: url(../img/sns_twitter.svg);
+    }
+  }
+}
+
+.footer-nav {
+  &__list {
+    line-height: 2;
+    font-size: 1.8em;
+  }
+
+  &__item {
+    & > a {
+      color: g.$color-gray;
+    }
+  }
+}
+
+.footer-created {
+  margin-bottom: 3.4vh;
+  color: g.$color-gray;
+  font-size: 1.4em;
+  text-align: center;
 }

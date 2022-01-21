@@ -10,7 +10,7 @@ https://www.nxworld.net/sass-media-queries-mixin.html
 //コンテンツ幅
 $contentsWidth: 1200px; //ブレイクポイント
 $mq-breakpoints: (
-  small: 768px,
+  small: 375px,
   medium: 900px,
   large: 1060px,
   xlarge: 1240px,
@@ -41,4 +41,14 @@ $mq-breakpoints: (
   @include mq {
     display: none;
   }
+}
+
+//Font Awesome
+@mixin font_icon {
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  font-variant: normal;
+  text-rendering: auto;
+  letter-spacing: 0;
+  line-height: 1;
 }

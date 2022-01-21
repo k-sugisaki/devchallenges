@@ -1,0 +1,38 @@
+@use '../global/index' as g;
+
+.contact-form {
+
+  &__label {
+    display: block;
+    color: g.$color-gray3;
+  }
+
+  &__inner {
+    position: relative;
+  }
+
+  &__text {
+    width: 291px;
+    height: 47px;
+    padding-top: 1em;
+    padding-left: 1.2em;
+    background-color: g.$color-gray;
+    border: none;
+    border-radius: 14px;
+    font-size: 1.2em;
+    color: g.$color-gray4;
+  }
+
+  &__btn {
+    position: absolute;
+    top: 4px;
+    left: calc(291px - 71px - 4px);
+    width: 71px;
+    height: 39px;
+    background-color: g.$color-blue;
+    color: g.$color-gray;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.4em;
+  }
+}

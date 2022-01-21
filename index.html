@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Edie homepage</title>
   <link rel="stylesheet" href="dist/css/style_edie_homepage.css">
+  <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
 <body>
   <header class="header">
@@ -21,76 +22,89 @@
     </nav>
   </header>
   <main class="main">
-    <section class="sec-hero" id="hero">
-      <p class="sec-lead--hero">
-        Unhappy with your website?
-      </p>
-      <h1 class="sec-title">
-        We create beautiful<br>and fast web service
-      </h1>
-      <div class="hero-image"></div>
-    </section>
     <section class="sec-contact" id="contact">
-      <h1 class="sec-title">
-        Story, emotion<br>and purpose
-      </h1>
-      <p class="contact-detail">
-        We help transform your ideas into real world applications 
-        that will outperform your toughest competition and help you achieve 
-        your strategic goals in short period of time.
-      </p>
-      <form action="" method="post" class="contact-form">
-        <label for="email" class="contact-form__label">Want us to contact you?</label>
-        <textarea name="user_email" id="email" cols="30" rows="10" class="contact-form__text">Email</textarea>
-        <button type="submit" class="contact-form__btn">Join</button>
-      </form>
+      <div class="contact__inner">
+        <p class="sec-lead--hero">
+          Unhappy with your website?
+        </p>
+        <h1 class="sec-title">
+          We create beautiful<br>and fast web service
+        </h1>
+        <div class="hero-image"></div>
+        <div class="contact-detail__inner">
+          <h2 class="sec-title">
+            Story, emotion<br>and purpose
+          </h2>
+          <p class="contact-description">
+            We help transform your ideas into real world applications 
+            that will outperform your toughest competition and help you achieve 
+            your strategic goals in short period of time.
+          </p>
+          <form action="" method="post" class="contact-form">
+            <label for="email" class="contact-form__label">Want us to contact you?</label>
+            <div class="contact-form__inner">
+              <input type="text" name="user_email" value="Email" class="contact-form__text">
+              <button type="submit" class="contact-form__btn">Join</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     </section>
     <section class="sec-service" id="service">
-      <h1 class="sec-title">
+      <h1 class="sec-title--service">
         We offer high <br>demand services
       </h1>
       <div class="service__wrap">
-        <div class="service-card--design">
-          <div class="service-card__icon"></div>
-          <p class="service-card__title">
-            UI/UX Design
-          </p>
-          <p class="service-card__description">
-            Lorem ipsum dolor sit amet, consectetur adipicing elit. 
-            Duis a metus ac nulla consequat aliquet id quis tupis.
-          </p>
-          <div class="service-card__btn"><a href="">Get started</a></div>
+        <div class="service-card service-card--design">
+          <div class="service-card__inner">
+            <div class="service-card__icon"></div>
+            <p class="service-card__title">
+              UI/UX Design
+            </p>
+            <p class="service-card__description">
+              Lorem ipsum dolor sit amet, consectetur adipicing elit. 
+              Duis a metus ac nulla consequat aliquet id quis tupis.
+            </p>
+            <a class="service-card__btn" a href="">Get started</a>
+          </div>
         </div>
-        <div class="service-card--frontend">
-          <div class="service-card__icon"></div>
-          <p class="service-card__title">
-            Front End
-          </p>
-          <p class="service-card__description">
-            Lorem ipsum dolor sit amet, consectetur adipicing elit. 
-            Duis a metus ac nulla consequat aliquet id quis tupis.
-          </p>
-          <div class="service-card__btn"><a href="">Get started</a></div>
+        <div class="service-card service-card--frontend">
+          <div class="service-card__inner">
+            <div class="service-card__icon"></div>
+            <p class="service-card__title">
+              Front End
+            </p>
+            <p class="service-card__description">
+              Lorem ipsum dolor sit amet, consectetur adipicing elit. 
+              Duis a metus ac nulla consequat aliquet id quis tupis.
+            </p>
+            <a class="service-card__btn" a href="">Get started</a>
+          </div>
         </div>
-        <div class="service-card--backend">
-          <div class="service-card__icon"></div>
-          <p class="service-card__title">
-            Back End
-          </p>
-          <p class="service-card__description">
-            Lorem ipsum dolor sit amet, consectetur adipicing elit. 
-            Duis a metus ac nulla consequat aliquet id quis tupis.
-          </p>
-          <div class="service-card__btn"><a href="">Get started</a></div>
+        <div class="service-card service-card--backend">
+          <div class="service-card__inner">
+            <div class="service-card__icon"></div>
+            <p class="service-card__title">
+              Back End
+            </p>
+            <p class="service-card__description">
+              Lorem ipsum dolor sit amet, consectetur adipicing elit. 
+              Duis a metus ac nulla consequat aliquet id quis tupis.
+            </p>
+            <a class="service-card__btn" a href="">Get started</a>
+          </div>
         </div>
       </div>
     </section>
     <section class="sec-works" id="works">
-      <h1 class="sec-title">
-        Good design means<br>good buisiness
-      </h1>
+      <div class="works__inner">
+        <h1 class="sec-title">
+          Good design means<br>good buisiness
+        </h1>
+      </div>
       <div class="works__wrap">
-        <div class="works-card--fullstack">
+        <div class="works-card works-card--fullstack">
           <div class="works-card__image"></div>
           <p class="works-card__lead">
             Full syack application
@@ -99,7 +113,7 @@
             Smart home dashboard
           </p>
         </div>
-        <div class="works-card--uxui">
+        <div class="works-card works-card--uxui">
           <div class="works-card__image"></div>
           <p class="works-card__lead">
             UX/UI design
@@ -108,7 +122,7 @@
             Onboard application
           </p>
         </div>
-        <div class="works-card--mobile">
+        <div class="works-card works-card--mobile">
           <div class="works-card__image"></div>
           <p class="works-card__lead">
             Mobile application
@@ -117,7 +131,7 @@
             Booking system
           </p>
         </div>
-        <div class="works-card--frontend">
+        <div class="works-card works-card--frontend">
           <div class="works-card__image"></div>
           <p class="works-card__lead">
             Front End application on
@@ -126,37 +140,39 @@
             Juice product homepage
           </p>
         </div>
+        <a class="works-more" href="">see more</a>
       </div>
-      <div class="works-more"><a href="">see more</a></div>
     </section>
     <section class="sec-member" id="member">
-    <p class="sec-lead--member">
-      Meet the team
-    </p>
-    <h1 class="sec-title">
-      We are chilled<br>and a laidback<br>team
-    </h1>
-    <p class="member-detail">
-      Lorem ipsum dolor sit amet,<br>consectetur adipicing elit.
-    </p>
-    <div class="member__wrap">
-      <div class="member__photo--no01"></div>
-      <div class="member__photo--no02"></div>
-      <div class="member__photo--no03"></div>
-    </div>
+      <div class="member__inner">
+        <p class="sec-lead--member">
+          Meet the team
+        </p>
+        <h1 class="sec-title--member">
+          We are chilled<br>and a laidback<br>team
+        </h1>
+        <p class="member-detail">
+          Lorem ipsum dolor sit amet,<br>consectetur adipicing elit.
+        </p>
+        <div class="member__wrap">
+          <div class="member__photo--no01"><img src="./dist/img/member_01.png" alt="Lena"></div>
+          <div class="member__photo--no02"><img src="./dist/img/member_02.png" alt="John"></div>
+          <div class="member__photo--no03"><img src="./dist/img/member_03.png" alt="Tommy"></div>
+        </div>
+      </div>
     </section>
     <section class="sec-comment" id="comment">
-      <p class="comment-text">
-        "Fast and outstanding resutls. Edie understands their customer's needs. 
-        They have a young and talented team."
-      </p>
-      <div class="comment-profile">
-        <div class="comment-profile__photo"></div>
-        <div class="comment-profile__name">
-          Carlos Tran
-        </div>
-        <div class="comment-profile__position">
-          The Decorate Gatsby
+      <div class="comment__inner">
+        <p class="comment-text">
+          "Fast and outstanding resutls. Edie understands their customer's needs. 
+          They have a young and talented team."
+        </p>
+        <div class="comment-profile">
+          <img class="comment-profile__photo" src="./dist/img/member_carlos.png" alt="carlos">
+          <div class="comment-profile__detail">
+            <div class="comment-profile__name">Carlos Tran</div>
+            <div class="comment-profile__position">The Decorate Gatsby</div>
+          </div>
         </div>
       </div>
     </section>
@@ -173,18 +189,21 @@
         </ul>
       </nav>
       <nav class="footer-share">
-        <p class="footer-share__title"></p>
+        <p class="footer-share__logo">Edie</p>
         <ul class="footer-share__list">
-          <li class="footer-share__item"><a href=""></a></li>
-          <li class="footer-share__item"><a href=""></a></li>
-          <li class="footer-share__item"><a href=""></a></li>
+          <li class="footer-share__item--instagram"><a href=""></a></li>
+          <li class="footer-share__item--linkedin"><a href=""></a></li>
+          <li class="footer-share__item--twitter"><a href=""></a></li>
         </ul>
       </nav>
       <form action="" method="post" class="contact-form--footer">
-        <label for="email" class="contact-form__label"></label>
-        <textarea name="user_email" id="email" cols="30" rows="10" class="contact-form__text">Email</textarea>
-        <button type="submit" class="contact-form__btn">Join</button>
+        <label for="email" class="contact-form__label">Want us to contact you?</label>
+        <div class="contact-form__inner">
+          <input type="text" name="user_email" value="Email" class="contact-form__text">
+          <button type="submit" class="contact-form__btn">Join</button>
+        </div>
       </form>
+      <div class="footer-created">created by k-sugisaki - devChallenges.io</div>
     </div>
   </footer>
   <script src="dist/my-bundle.js"></script>
