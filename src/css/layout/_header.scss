@@ -1,0 +1,18 @@
+@use '../global/index' as g;
+
+   .header {
+    padding: 13px 10px;
+  }
+  
+  .header-logo {
+    line-height: 1;
+    font-family: g.$font-logo;
+    font-size: 2.4em;
+    font-weight: 800;
+  }
+  
+  .header-nav {
+    &__list {
+      display: none; //仮置き
+    }
+  }

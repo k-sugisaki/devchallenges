@@ -1,0 +1,45 @@
+@use '../global/index' as g;
+
+.works-card {
+  $this: &;
+
+  &__image {
+    padding-top: 100%;
+    @include g.bg_image;
+    border-radius: 24px;
+  }
+
+  &__lead {
+    margin-top: 13px;
+    color: g.$color-gray3;
+    font-size: 1.2em;
+  }
+
+  &__title {
+    font-size: 1.8em;
+  }
+
+  &--fullstack {
+    & #{$this}__image {
+      background-image: url(../img/works_smarthome.jpg);
+    }
+  }
+
+  &--uxui {
+    & #{$this}__image {
+      background-image: url(../img/works_onboard.png);
+    }
+  }
+
+  &--mobile {
+    & #{$this}__image {
+      background-image: url(../img/works_booking.png);
+    }
+  }
+
+  &--frontend {
+    & #{$this}__image {
+      background-image: url(../img/works_juice-product.png);
+    }
+  }
+}

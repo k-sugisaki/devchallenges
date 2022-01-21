@@ -1,32 +1,13 @@
 @use '../global/index' as g;
 @use './service-card';
+@use './works-card';
+@use './member-photoarea';
 @use './form';
 
 
 .pcnone {
   @include g.mq {
     display: none;
-  }
-}
-
-/* ============================
-   header 
-   ============================ */
-
-.header {
-  padding: 13px 10px;
-}
-
-.header-logo {
-  line-height: 1;
-  font-family: g.$font-logo;
-  font-size: 2.4em;
-  font-weight: 800;
-}
-
-.header-nav {
-  &__list {
-    display: none; //仮置き
   }
 }
 
@@ -138,50 +119,6 @@
   }
 }
 
-.works-card {
-  $this: &;
-
-  &__image {
-    padding-top: 100%;
-    @include g.bg_image;
-    border-radius: 24px;
-  }
-
-  &__lead {
-    margin-top: 13px;
-    color: g.$color-gray3;
-    font-size: 1.2em;
-  }
-
-  &__title {
-    font-size: 1.8em;
-  }
-
-  &--fullstack {
-    & #{$this}__image {
-      background-image: url(../img/works_smarthome.jpg);
-    }
-  }
-
-  &--uxui {
-    & #{$this}__image {
-      background-image: url(../img/works_onboard.png);
-    }
-  }
-
-  &--mobile {
-    & #{$this}__image {
-      background-image: url(../img/works_booking.png);
-    }
-  }
-
-  &--frontend {
-    & #{$this}__image {
-      background-image: url(../img/works_juice-product.png);
-    }
-  }
-}
-
 .works-more {
   display: block;
   color: g.$color-blue;
@@ -206,43 +143,6 @@
 .member-detail {
   font-size: 1.6em;
   color: g.$color-gray5;
-}
-
-.member__wrap {
-  display: grid;
-  grid-template-columns: 5fr 4fr;
-  grid-gap: 3vw;
-  align-content: center;
-  align-items: center;
-  min-height: 320px; 
-}
-
-.member__photo {
-  &--no01 {
-    @extend .member__photo;
-    grid-column: 1/2;
-    grid-row: 1/3;
-  }
-
-  &--no02 {
-    @extend .member__photo;
-    grid-column: 2/3;
-    grid-row: 1/2;
-
-    & > img {
-      max-width: 90%;
-    }
-  }
-
-  &--no03 {
-    @extend .member__photo;
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-
-  & > img {
-    border-radius: 24px;
-  }
 }
 
 /* ============================
