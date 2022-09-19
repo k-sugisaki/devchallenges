@@ -57,7 +57,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "css/style_edie_homepage.css",
+      filename: "css/style_button_compornent.css",
       ignoreOrder: true,
     }),
     // new StylelintPlugin({
