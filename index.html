@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edie homepage</title>
-  <link rel="stylesheet" href="dist/css/style.css">
+  <title>compornent</title>
+  <link rel="stylesheet" href="dist/css/style_button_compornent.css">
   <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
-<body>
+<body class="compornent">
   <div class="nav-area">
     <div class="logo">Devchallenges.io</div>
     <nav class="nav">
@@ -15,7 +15,7 @@
         <li class="nav__item"><a href="#" class="nav__link">Colors</a></li>
         <li class="nav__item"><a href="#" class="nav__link">Typography</a></li>
         <li class="nav__item"><a href="#" class="nav__link">Spaces</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Buttons</a></li>
+        <li class="nav__item"><a href="#" class="nav__link active">Buttons</a></li>
         <li class="nav__item"><a href="#" class="nav__link">Inputs</a></li>
         <li class="nav__item"><a href="#" class="nav__link">Grid</a></li>
       </ul>
@@ -24,6 +24,16 @@
   <main class="main">
     <section class="section-buttons">
       <h1 class="section-title">Buttons</h1>
+      <ul class="buttons__list default">
+        <li class="buttons__item">
+          <span class="buttons__description">&lt;button/&gt;</span>
+          <button>Default</button>
+        </li>
+        <li class="buttons__item">
+          <span class="buttons__description">&:hover, &:focus</span>
+          <button>Default</button>
+        </li>
+      </ul>
     </section>
   </main>
   <script src="dist/my-bundle.js"></script>

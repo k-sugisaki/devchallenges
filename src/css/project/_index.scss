@@ -1,6 +1,4 @@
 @use '../global/index' as g;
-@use './service-card';
-@use './works-card';
 @use './member-photoarea';
 @use './form';
 
@@ -11,171 +9,38 @@
   }
 }
 
+.compornent {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+
+  .nav-area {
+    flex-grow: 1;
+  }
+  .main {
+    flex-grow: 5;
+  }
+}
+
 /* main */
 .main {
+  padding: 60px 50px;
   width: 100%;
-
-  & > * + * {
-    margin-top: 10em;
-  }
-
-  & > *:last-child {
-    margin-bottom: 10em;
-  }
 }
 
-.sec-title {
-  font-size: 2.4em;
-  font-weight: 500;
-  line-height: 1.5;
+.section-title {
+  font-size: 2em;
+}
 
-  &--member {
-    @extend .sec-title;
-    font-size: 3.6em;
-    font-weight: normal;
+.buttons__list {
+  display: flex;
+
+  &> li + li {
+    margin-left: 90px;
   }
 }
 
-.sec-lead {
-  font-size: 1.2em;
-
-  &--hero {
-    color: g.$color-blue;
-  }
-
-  &--member {
-    color: g.$color-red;
-    font-size: 1.8em;
-  }
-}
-
-
-
-/* ============================
-   contact
-   ============================ */
-
-.hero-image {
-  margin: 0 calc(50% - 50vw);
-  padding-top: 49%;
-  width: 100vw;
-  @include g.bg_image;
-  background-image: url(../img/heroImage_sp.png);
-  border-radius: 18px;
-  overflow: hidden;
-}
-
-.contact {
-  &__inner {
-    padding: 0 10.6vw;
-
-    & > div {
-      margin-top: 2em;
-    }
-  }
-}
-
-.contact-detail {
-  &__inner {
-    & > * + * {
-      margin-top: 2em;
-    }
-  }
-}
-
-.contact-description {
-  font-size: 1.2em;
-}
-
-/* ============================
-   service
-   ============================ */
-
-.sec-title {
-  &--service {
-    @extend .sec-title;
-    @extend .contact__inner;
-  }
-}
-
-.service__wrap {
+.buttons__item {
   display: flex;
   flex-direction: column;
 }
-
-/* ============================
-   works
-   ============================ */
-
-.works__inner {
-  padding: 0 10.6vw;
-}
-
-.works__wrap {
-  margin: 13% 3.2vw;
-
-  & > * + * {
-    margin-top: 2em;
-  }
-}
-
-.works-more {
-  display: block;
-  color: g.$color-blue;
-  font-size: 1.8em;
-
-  &::after {
-    margin-left: 1em;
-    @include g.font_icon;
-    content: '\f061';
-    font-size: .8em;
-  }
-}
-
-/* ============================
-   member
-   ============================ */
-
-.member__inner {
-  margin: 13% 3.2vw;
-}
-
-.member-detail {
-  font-size: 1.6em;
-  color: g.$color-gray5;
-}
-
-/* ============================
-   comment
-   ============================ */
-
-   .comment__inner {
-     padding: 0 3.2vw;
-   }
-
-   .comment-text {
-     margin-bottom: 7vw;
-     font-size: 2.4em;
-   }
-
-   .comment-profile {
-     display: flex;
-     justify-content: flex-start;
-     align-items: center;
-
-     &__photo {
-       margin-right: 7vw;
-       display: block;
-       max-width: 82px;
-       border-radius: 12px;
-     }
-
-     &__name {
-       font-size: 2.4em;
-     }
-
-     &__position {
-       font-size: 1.8em;
-       color: g.$color-gray3;
-     }
-   }

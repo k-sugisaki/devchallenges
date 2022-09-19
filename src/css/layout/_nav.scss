@@ -1,0 +1,23 @@
+@use "../global/index" as g;
+
+.nav-area {
+  padding: 50px;
+  background-color: g.$color-gray;
+}
+
+.nav__list {
+  margin-top: 60px;
+
+  & > li + li {
+    margin-top: 20px;
+  }
+}
+
+.nav__link {
+  color: g.$color-darkgray;
+  font-size: 1.2em;
+
+  &.active {
+    color: g.$color-base;
+  }
+}
