@@ -1,5 +1,15 @@
 @use "../global/index" as g;
 
+.logo {
+  color: g.$color-darkgray3;
+  font-weight: bold;
+  font-size: 1.3em;
+
+  & > span {
+    color: g.$color-orange;
+  }
+}
+
 .nav-area {
   padding: 50px;
   background-color: g.$color-gray;

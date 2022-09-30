@@ -1,0 +1,117 @@
+@use '../global/index' as g;
+
+.btn {
+  width: 92px;
+  height: 35px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  background-color: g.$color-white;
+  box-shadow: g.$color-gray2 0px 1px 3px;
+  border: none;
+}
+
+.btn-default {
+  background-color: g.$color-gray2;
+  
+  &:hover, &:focus,
+  &.hover, &.foucus {
+    background-color: g.$color-darkgray;
+  }
+}
+
+.btn-outline {
+  color: g.$color-blue;
+  border: solid 2px g.$color-blue;
+  
+  &:hover, &:focus,
+  &.hover, &.foucus {
+    background-color: g.$color-rightblue;
+  }
+}
+
+.btn-text {
+  color: g.$color-blue;
+  border: none;
+  
+  &:hover, &:focus,
+  &.hover, &.foucus {
+    background-color: g.$color-rightblue;
+  }
+}
+
+.btn-disableShadow {
+  box-shadow: none;
+}
+
+.btn-disabled {
+  background-color: g.$color-gray2;
+  color: g.$color-darkgray;
+  border: none;
+  
+  &.variant-text {
+    background-color: g.$color-white;
+  }
+}
+
+.icon {
+  width: 110px;
+  &-start::before {
+    @include g.font_icon;
+    margin-right: 10px;
+    content: "\f07a";
+  }
+  
+  &-end::after {
+    @include g.font_icon;
+    margin-left: 10px;
+    content: "\f07a";
+  }
+}
+
+.size {
+  &-sm {
+    width: 76px;
+    height: 32px;
+    font-size: 1em;
+  }
+  &-md {
+    width: 84px;
+    height: 35px;
+    font-size: 1.3em;
+  }
+  &-lg {
+    width: 102px;
+    height: 39px;
+    font-size: 1.5em;
+  }
+}
+
+.color {
+  &-primary {
+    color: g.$color-white;
+    background-color: g.$color-blue;
+
+    &:hover, &:focus,
+    &.hover, &.foucus {
+      background-color: g.$color-darkblue;
+    }
+  }
+  &-secondary {
+    color: g.$color-white;
+    background-color: g.$color-darkgray2;
+
+    &:hover, &:focus,
+    &.hover, &.foucus {
+      background-color: g.$color-darkgray3;
+    }
+  }
+  &-danger {
+    color: g.$color-white;
+    background-color: g.$color-red;
+
+    &:hover, &:focus,
+    &.hover, &.foucus {
+      background-color: g.$color-darkred;
+    }
+  }
+}

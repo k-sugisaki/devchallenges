@@ -1,6 +1,5 @@
 @use '../global/index' as g;
-@use './member-photoarea';
-@use './form';
+@use './btn';
 
 
 .pcnone {
@@ -12,8 +11,8 @@
 .compornent {
   display: flex;
   width: 100%;
-  height: 100vh;
-
+  height: 100%;
+  
   .nav-area {
     flex-grow: 1;
   }
@@ -24,7 +23,7 @@
 
 /* main */
 .main {
-  padding: 60px 50px;
+  padding: 60px 50px 30px;
   width: 100%;
 }
 
@@ -34,13 +33,34 @@
 
 .buttons__list {
   display: flex;
+  align-items: center;
 
-  &> li + li {
-    margin-left: 90px;
+  &.items-flexend {
+    align-items: flex-end;
+  }
+
+  & + & {
+    margin-top: 40px;
   }
 }
 
 .buttons__item {
   display: flex;
   flex-direction: column;
+
+  .column-two > & {
+    width: 30%;
+  }
+
+  .column-two-long > & {
+    width: 40%;
+  }
+
+  .column-many > & {
+    width: 25%;
+  }
+}
+
+.buttons__description {
+  margin-bottom: 5px;
 }

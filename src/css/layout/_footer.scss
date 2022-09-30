@@ -1,0 +1,9 @@
+@use "../global/index" as g;
+
+.footer {
+  padding-top: 60px;
+}
+
+.credit {
+  color: g.$color-darkgray;
+}
