@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>compornent</title>
+  <link rel="stylesheet" href="../css/style_button_compornent.css">
+  <link rel ="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+<body class="compornent">
+  <div class="nav-area">
+    <div class="logo"><span>Dev</span>challenges.io</div>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link">Colors</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Typography</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Spaces</a></li>
+        <li class="nav__item"><a href="#" class="nav__link active">Buttons</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Inputs</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Grid</a></li>
+      </ul>
+    </nav>
+  </div>
+  <main class="main">
+    <section class="section-buttons">
+      <h1 class="section-title">Buttons</h1>
+      <ul class="buttons__list column-two">
+        <li class="buttons__item">
+          <span class="buttons__description">&lt;button/&gt;</span>
+          <button class="btn btn-default">Default</button>
+        </li>
+        <li class="buttons__item">
+          <span class="buttons__description">&:hover, &:focus</span>
+          <button class="btn btn-default hover focus">Default</button>
+        </li>
+      </ul>
+      <ul class="buttons__list column-two">
+        <li class="buttons__item">
+          <span class="buttons__description">&lt;button variant="outline" /&gt;</span>
+          <button class="btn btn-outline btn-disableShadow">Default</button>
+        </li>
+        <li class="buttons__item">
+          <span class="buttons__description">&:hover, &:focus</span>
+          <button class="btn btn-outline btn-disableShadow hover focus">Default</button>
+        </li>
+      </ul>
+      <ul class="buttons__list column-two">
+        <li class="buttons__item">
+          <span class="buttons__description">&lt;button variant="text" /&gt;</span>
+          <button class="btn btn-text btn-disableShadow">Default</button>
+        </li>
+        <li class="buttons__item">
+          <span class="buttons__description">&:hover, &:focus</span>
+          <button class="btn btn-text btn-disableShadow hover focus">Default</button>
+        </li>
+      </ul>
+      <ul class="buttons__list">
+        <li class="buttons__item">
+          <span class="buttons__description">&lt;button disableShadow /&gt;</span>
+          <button class="btn btn-disableShadow color-primary">Default</button>
+        </li>
+      </ul>
+      <ul class="buttons__list column-two">
+        <li class="buttons__item">
+          <span class="buttons__disabled">&lt;button disabled /&gt;</span>
+          <button class="btn btn-disabled btn-disableShadow">Disabled</button>
+        </li>
+        <li class="buttons__item">
+          <span class="buttons__description">&lt;button variant="text" disabled /&gt;</span>
+          <button class="btn btn-disabled btn-disableShadow variant-text">Disabled</button>
+        </li>
+      </ul>
+      <ul class="buttons__list column-two-long">
+        <li class="buttons__item">
+          <span class="buttons__description">&lt;button startIcon="local_grocery_store" /&gt;</span>
+          <button class="btn btn-disableShadow color-primary icon icon-start">Default</button>
+        </li>
+        <li class="buttons__item">
+          <span class="buttons__description">&lt;button endIcon="local_grocery_store" /&gt;</span>
+          <button class="btn btn-disableShadow color-primary icon icon-end">Default</button>
+        </li>
+      </ul>
+      <ul class="buttons__list column-many">
+        <li class="buttons__item">
+          <span class="buttons__description">&lt;button size="sm" /&gt;</span>
+          <button class="btn color-primary size-sm">Default</button>
+        </li>
+        <li class="buttons__item">
+          <span class="buttons__description">&lt;button size="md" /&gt;</span>
+          <button class="btn color-primary size-md">Default</button>
+        </li>
+        <li class="buttons__item">
+          <span class="buttons__description">&lt;button size="lg" /&gt;</span>
+          <button class="btn color-primary size-lg">Default</button>
+        </li>
+      </ul>
+      <ul class="buttons__list column-many">
+        <li class="buttons__item">
+          <span class="buttons__description">&lt;button color="default" /&gt;</span>
+          <button class="btn btn-default">Default</button>
+        </li>
+        <li class="buttons__item">
+          <span class="buttons__description">&lt;button color="color-primary" /&gt;</span>
+          <button class="btn btn-default color-primary">Default</button>
+        </li>
+        <li class="buttons__item">
+          <span class="buttons__description">&lt;button color="secondary" /&gt;</span>
+          <button class="btn btn-default color-secondary">Secondary</button>
+        </li>
+        <li class="buttons__item">
+          <span class="buttons__description">&lt;button color="danger" /&gt;</span>
+          <button class="btn btn-default color-danger">Danger</button>
+        </li>
+      </ul>
+      <ul class="buttons__list column-many items-flexend">
+        <li class="buttons__item">
+          <span class="buttons__description">&:hover, &:focus</span>
+          <button class="btn btn-default hover focus">Default</button>
+        </li>
+        <li class="buttons__item">
+          <span class="buttons__description"></span>
+          <button class="btn btn-default color-primary hover focus">Default</button>
+        </li>
+        <li class="buttons__item">
+          <span class="buttons__description"></span>
+          <button class="btn btn-default color-secondary hover focus">Secondary</button>
+        </li>
+        <li class="buttons__item">
+          <span class="buttons__description"></span>
+          <button class="btn btn-default color-danger hover focus">Danger</button>
+        </li>
+      </ul>
+    </section>
+    <footer class="footer">
+      <p class="credit">created by ... - devChallenges.io</p>
+    </footer>
+  </main>
+  <script src="dist/my-bundle.js"></script>
+</body>
+</html>
