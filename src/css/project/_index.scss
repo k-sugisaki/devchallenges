@@ -77,6 +77,10 @@ body {
   border: 3px solid #4d4f5e;
   transition: all 0.3s ease-in-out;
 
+  &:nth-child(n+4) {
+    margin-top: 2em;
+  }
+  
   @include mx.mq(small, max, true) {
     margin-top: 2em;
     flex-basis: 100%;
@@ -104,6 +108,10 @@ body {
 
   .crew & {
     background-image: url(../img/devchallengs_works_crew.jpg);
+  }
+
+  .button_component & {
+    background-image: url(../img/devchallengs_works_button_component.jpg);
   }
 }
 
