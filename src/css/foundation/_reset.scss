@@ -73,11 +73,25 @@ select {
 }
 
 /* 追加 */
-ul,ol {
+ul,
+ol {
   padding-inline-start: 0;
 }
 
 li {
   list-style: none;
   padding-inline-start: 0;
+}
+
+a {
+  color: #0f0f0f;
+  text-decoration: none;
+
+  &:active {
+    color: #0f0f0f;
+  }
+
+  &:focus {
+    outline: none;
+  }
 }

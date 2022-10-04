@@ -33,7 +33,7 @@ $mq-breakpoints: (
 @mixin bg_image {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain; 
+  background-size: cover; 
 }
 
 //表示・非表示

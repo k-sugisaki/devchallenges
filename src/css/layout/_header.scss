@@ -1,0 +1,24 @@
+@use '../global/variables' as var;
+@use "../global/mixins" as mx;
+
+.header {
+  margin: 20px auto 0;
+  padding: 0 20px;
+  font-size: 2em;
+  font-family: var.$font-header;
+  font-weight: 900;
+
+  @include mx.mq(medium) {
+    width: 900px;
+  }
+
+  &::before {
+    margin-right: 0.3em;
+    padding-top: 1em;
+    width: 1em;
+    display: inline-block;
+    content: "";
+    @include mx.bg_image;
+    background-image: url(../img/devchallenges.png);
+  }
+}

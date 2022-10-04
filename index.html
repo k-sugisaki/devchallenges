@@ -1,15 +1,69 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>webpack Test</title>
-  <link rel="stylesheet" href="dist/css/style.css">
-</head>
-<body>
-  <div id="main">
-    <p>テスト</p>
-  </div>
-  <script src="dist/my-bundle.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My DevChallenges</title>
+    <link rel="stylesheet" href="dist/css/style.css"/>
+  </head>
+  <body>
+    <header class="header">devChallengs</header>
+    <div class="contents">
+      <div class="kv"></div>
+      <div class="filter-wrap">
+        <ul class="filter-list">
+          <li class="filter-item all active" data-cate="all">ALL</li>
+          <li class="filter-item cooding" data-cate="html">コーディング</li>
+          <li class="filter-item design" data-cate="css">デザイン</li>
+        </ul>
+      </div>
+      <div class="works work-box all active">
+        <ul class="works-wrap">
+          <li class="works-item cooding rank notfound" data-cate="html" data-rank="02">
+            <a class="works-link" href="https://k-sugisaki.github.io/devchallenges/404_not_found/" target="_blank" rel="noopener">
+              <div class="works-img"></div>
+              <div class="works-text">
+                <span class="cate">コーディング</span>
+                <div class="works-title">ページが見つかりません</div>
+                <div class="works-detail">404ページです。webpackで開発環境を構築しています。</div>
+                <ul class="tag">
+                  <li class="tag__item">#HTML</li>
+                  <li class="tag__item">#CSS</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="works-item cooding rank recipe" data-cate="html" data-rank="02">
+            <a class="works-link" href="https://k-sugisaki.github.io/devchallenges/recipe_page/" target="_blank" rel="noopener">
+              <div class="works-img"></div>
+              <div class="works-text">
+                <span class="cate">コーディング</span>
+                <div class="works-title">レシピブログ</div>
+                <div class="works-detail">レシピブログの1ページをイメージしています。</div>
+                <ul class="tag">
+                  <li class="tag__item">#HTML</li>
+                  <li class="tag__item">#CSS</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="works-item cooding rank crew" data-cate="html" data-rank="02">
+            <a class="works-link" href="https://k-sugisaki.github.io/devchallenges/my_team_page/" target="_blank" rel="noopener">
+              <div class="works-img"></div>
+              <div class="works-text">
+                <span class="cate">コーディング</span>
+                <div class="works-title">スタッフ紹介</div>
+                <div class="works-detail">スタッフ紹介のページです。アニメーションを追加予定です。</div>
+                <ul class="tag">
+                  <li class="tag__item">#HTML</li>
+                  <li class="tag__item">#CSS</li>
+                </ul>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- <script src="dist/my-bundle.js"></script> -->
+  </body>
 </html>
