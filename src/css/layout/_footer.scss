@@ -52,17 +52,17 @@
 
     &--instagram {
       @extend #{$this}__item;
-      background-image: url(../img/sns_instagram.svg);
+      background-image: url(../img/edie_sns_instagram.svg);
     }
 
     &--linkedin {
       @extend #{$this}__item;
-      background-image: url(../img/sns_linkedin.svg);
+      background-image: url(../img/edie_sns_linkedin.svg);
     }
 
     &--twitter {
       @extend #{$this}__item;
-      background-image: url(../img/sns_twitter.svg);
+      background-image: url(../img/edie_sns_twitter.svg);
     }
   }
 }
