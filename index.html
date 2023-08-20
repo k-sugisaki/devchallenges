@@ -5,41 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Checkout Page</title>
   <link rel="stylesheet" href="dist/css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 </head>
 <body>
-  <div id="main">
+  <div id="main" class="main">
     <form action="" method="post" class="contact-form">
       <h1 class="contact-form__title">Checkout</h1>
       <h2 class="contact-form__subtitle">Contact information</h2>
-      <div class="form-input--email">
+      <div class="form-input">
         <label for="email" class="email__label">Email</label>
-        <input type="email" name="email" id="email" class="email__input">
+        <input type="email" name="email" id="email" class="email__input" placeholder="&#xe87d Enter your email...">
       </div>
-      <div class="form-input--tel">
+      <div class="form-input">
         <label for="tel" class="tel__label">Phone</label>
-        <input type="tel" name="tel" id="tel" class="tel__input">
+        <input type="tel" name="tel" id="tel" class="tel__input" placeholder="Enter your phone...">
       </div>
       <h2 class="contact-form__subtitle">Shipping address</h2>
-      <div class="form-input--name">
+      <div class="form-input">
         <label for="name" class="name__label">Full name</label>
-        <input type="text" name="name" id="name" class="name__input">
+        <input type="text" name="name" id="name" class="name__input" placeholder="Your name...">
       </div>
-      <div class="form-input--address">
+      <div class="form-input">
         <label for="address" class="address__label">Address</label>
-        <input type="text" name="address" id="address" class="address__input">
+        <input type="text" name="address" id="address" class="address__input" placeholder="Your address...">
       </div>
-      <div class="form-input--city">
+      <div class="form-input">
         <label for="city" class="city__label">City</label>
-        <input type="text" name="city" id="city" class="city__input">
+        <input type="text" name="city" id="city" class="city__input" placeholder="Your city...">
       </div>
       <div class="contact-form__selectarea">
-        <div class="form-input--country">
+        <div class="form-input">
           <label for="country" class="country__label">Country</label>
           <select name="country" id="country" class="country__input"></select>
         </div>
-        <div class="form-input--postalcode">
+        <div class="form-input">
           <label for="postalcode" class="postalcode__label">Postal code</label>
-          <input type="text" name="postalcode" id="postalcode" class="postalcode__input">
+          <input type="text" name="postalcode" id="postalcode" class="postalcode__input" placeholder="Your postal code..">
         </div>
       </div>
       <div class="contact-form__save-information-check">

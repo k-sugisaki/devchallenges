@@ -1,8 +1,40 @@
-@use '../global/variables' as var;
-@use '../global/mixins' as mx;
+@use "../global/variables" as var;
+@use "../global/mixins" as mx;
 
 .pcnone {
   @include mx.mq {
     display: none;
   }
+}
+
+.main {
+  margin: auto;
+  padding: 50px 120px;
+  max-width: 1200px;
+}
+
+.contact-form {
+  &__title {
+    font-size: 2.8em;
+  }
+
+  &__subtitle {
+    margin-top: 2em;
+    font-size: 2.1em;
+  }
+
+  &__selectarea {
+    display: flex;
+    justify-content: space-between;
+
+    & > .form-input {
+      width: calc((100% - 30px) / 2);
+    }
+  }
+}
+
+.form-input {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
 }
